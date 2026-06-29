@@ -3,10 +3,35 @@
   background: #fef3e2;
   padding: 3.5rem 2.5rem;
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
   min-height: 400px;
   position: relative;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: repeating-linear-gradient(
+    90deg,
+    #1d9e75 0,
+    #1d9e75 40px,
+    #c8a96a 40px,
+    #c8a96a 80px,
+    #c45a2a 80px,
+    #c45a2a 120px,
+    #5dcaa5 120px,
+    #5dcaa5 160px
+  );
 }
 
 .hero-pill {
@@ -21,6 +46,15 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 1.1rem;
+}
+
+.hero-h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #2c1a0e;
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
 }
 
 .hero-h1 em {
@@ -91,4 +125,26 @@
   color: #a89070;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-h1 {
+    font-size: 32px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .logo-ring {
+    width: 180px;
+    height: 180px;
+  }
 }
