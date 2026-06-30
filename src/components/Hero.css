@@ -70,6 +70,35 @@
   margin-bottom: 1.75rem;
 }
 
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.hero-tag {
+  background: #fff;
+  border: 1.5px solid #ede0c4;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2c1a0e;
+}
+
+.hero-tag-teal {
+  background: #e1f5ee;
+  border-color: #9fe1cb;
+  color: #0f6e56;
+}
+
+.hero-tag-coral {
+  background: #fef3e2;
+  border-color: #ede0c4;
+  color: #c45a2a;
+}
+
 .hero-btns {
   display: flex;
   gap: 12px;

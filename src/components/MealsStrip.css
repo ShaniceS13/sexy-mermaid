@@ -1,0 +1,36 @@
+.meals-strip {
+  background: #c45a2a;
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.meals-item {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.meals-hours {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+}
+
+.meals-dot {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .meals-strip {
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .meals-dot {
+    display: none;
+  }
+}
