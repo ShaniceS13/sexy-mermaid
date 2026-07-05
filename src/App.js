@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MealsStrip from "./components/MealsStrip";
+import EventsBar from "./components/EventsBar";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <MealsStrip />
+      <EventsBar />
     </div>
   );
 }
