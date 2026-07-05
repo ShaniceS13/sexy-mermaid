@@ -4,9 +4,9 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-text">
-        <div className="hero-pill">📍Roatán, Bay Islands · Honduras</div>
+        <div className="hero-pill">📍Roatan, Bay Islands · Honduras</div>
         <h1 className="hero-h1">
-          Your Roatán <br /> adventure <br />
+          Your Roatan <br /> adventure <br />
           <em> starts here</em>
         </h1>
         <p className="hero-sub">

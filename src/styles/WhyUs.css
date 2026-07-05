@@ -1,0 +1,44 @@
+.why-us {
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #ede0c4;
+}
+
+.why-item {
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+  border-right: 1px solid #ede0c4;
+}
+
+.why-item:last-child {
+  border-right: none;
+}
+
+.why-icon {
+  font-size: 26px;
+  margin-bottom: 0.5rem;
+}
+
+.why-item h4 {
+  font-size: 13px;
+  font-weight: 900;
+  color: #2c1a0e;
+  margin-bottom: 4px;
+}
+
+.why-item p {
+  font-size: 11px;
+  color: #a89070;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .why-us {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-item:nth-child(2) {
+    border-right: none;
+  }
+}
