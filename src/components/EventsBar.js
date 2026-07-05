@@ -1,4 +1,4 @@
-import "./EventsBar.css";
+import "../styles/EventsBar.css";
 
 export default function EventsBar() {
   return (

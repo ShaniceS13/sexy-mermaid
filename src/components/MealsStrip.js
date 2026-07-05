@@ -1,4 +1,4 @@
-import "./MealsStrip.css";
+import "../styles/MealsStrip.css";
 
 export default function MealsStrip() {
   return (
