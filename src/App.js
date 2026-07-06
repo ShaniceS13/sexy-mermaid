@@ -6,6 +6,7 @@ import MealsStrip from "./components/MealsStrip";
 import EventsBar from "./components/EventsBar";
 import WhyUs from "./components/WhyUs";
 import About from "./components/About";
+import Menu from "./components/Menu";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <EventsBar />
       <WhyUs />
       <About />
+      <Menu />
     </div>
   );
 }

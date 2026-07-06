@@ -1,0 +1,155 @@
+.menu {
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.menu-eyebrow {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c45a2a;
+  margin-bottom: 0.5rem;
+}
+
+.menu-h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c1a0e;
+  margin-bottom: 0.25rem;
+}
+
+.menu-sub {
+  font-size: 14px;
+  color: #a89070;
+  margin-bottom: 1.5rem;
+}
+
+.special-box {
+  background: #e1f5ee;
+  border: 1.5px solid #9fe1cb;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.special-box p {
+  font-size: 13px;
+  color: #085041;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.special-box strong {
+  color: #0f6e56;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.menu-cat {
+  background: #fef9f0;
+  border: 1px solid #ede0c4;
+  border-radius: 12px;
+  padding: 1.1rem;
+}
+
+.menu-cat-h {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c45a2a;
+  margin-bottom: 0.8rem;
+  font-weight: 900;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 7px 0;
+  border-bottom: 0.5px solid #ede0c4;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.mi-l {
+  flex: 1;
+}
+
+.mi-name {
+  font-size: 13px;
+  color: #2c1a0e;
+  font-weight: 700;
+}
+
+.mi-desc {
+  font-size: 11px;
+  color: #a89070;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.mi-price {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.mi-usd {
+  font-size: 13px;
+  color: #1d9e75;
+  font-weight: 700;
+  display: block;
+}
+
+.mi-lps {
+  font-size: 11px;
+  color: #a89070;
+  display: block;
+}
+
+.bfast-banner {
+  background: #fef3e2;
+  border: 1.5px solid #c8a96a;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1.25rem;
+}
+
+.bfast-banner span {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.bfast-banner h4 {
+  font-size: 14px;
+  font-weight: 900;
+  color: #2c1a0e;
+  margin-bottom: 3px;
+}
+
+.bfast-banner p {
+  font-size: 12px;
+  color: #7a6a50;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}

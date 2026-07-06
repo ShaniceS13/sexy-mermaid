@@ -34,7 +34,7 @@ export default function About() {
             table, morning, noon, or night
           </p>
           <blockquote className="about-quote">
-            "Come hungry. Leave happy. Come back tomorrow"
+            Come hungry. Leave happy. Come back tomorrow.
           </blockquote>
           <div className="dir-grid">
             <div className="dir-card">
