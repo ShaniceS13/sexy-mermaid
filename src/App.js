@@ -7,6 +7,7 @@ import EventsBar from "./components/EventsBar";
 import WhyUs from "./components/WhyUs";
 import About from "./components/About";
 import Menu from "./components/Menu";
+import RoatanFacts from "./components/RoatanFacts";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <WhyUs />
       <About />
       <Menu />
+      <RoatanFacts />
     </div>
   );
 }

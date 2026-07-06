@@ -1,0 +1,45 @@
+.roatan-facts {
+  background: #1d9e75;
+  padding: 1.75rem 2rem;
+}
+
+.facts-head {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9fe1cb;
+  margin-bottom: 1.1rem;
+}
+
+.facts-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.fact {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.fact-num {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.fact-lbl {
+  font-size: 11px;
+  color: #9fe1cb;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .facts-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

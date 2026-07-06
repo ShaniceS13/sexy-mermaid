@@ -108,7 +108,7 @@ export default function Menu() {
 
         <div className="menu-cat">
           <div className="menu-cat-h">
-            🧊 Frozen cocktails — $10 / L250 each
+            🍸 Frozen cocktails — $10 / L250 each
           </div>
           <div className="menu-item">
             <div className="mi-l">
