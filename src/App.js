@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import MealsStrip from "./components/MealsStrip";
 import EventsBar from "./components/EventsBar";
 import WhyUs from "./components/WhyUs";
+import About from "./components/About";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <MealsStrip />
       <EventsBar />
       <WhyUs />
+      <About />
     </div>
   );
 }
