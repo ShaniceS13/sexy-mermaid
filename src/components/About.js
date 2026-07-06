@@ -57,51 +57,56 @@ export default function About() {
           </div>
           <div className="about-info-body">
             <div className="info-row">
-              <span className="info-icon">🕐</span>
+              <span className="info-icon">
+                <FontAwesomeIcon icon={faClock} />
+              </span>
               <div>
                 <div className="info-lbl">Hours</div>
                 <div className="info-val">Every day · 8AM – 8PM</div>
               </div>
             </div>
-          </div>
-          <div className="info-row">
-            <span className="info-icon">☀️</span>
-            <div>
-              <div className="info-lbl">Meals served</div>
-              <div className="info-val">Breakfast · Lunch · Dinner</div>
+
+            <div className="info-row">
+              <span className="info-icon">☀️</span>
+              <div>
+                <div className="info-lbl">Meals served</div>
+                <div className="info-val">Breakfast · Lunch · Dinner</div>
+              </div>
             </div>
-          </div>
-          <div className="info-row">
-            <span className="info-icon">🎤</span>
-            <div>
-              <div className="info-lbl">Karaoke night</div>
-              <div className="info-val">Wednesdays · 3PM – 6PM</div>
+            <div className="info-row">
+              <span className="info-icon">
+                <FontAwesomeIcon icon={faMicrophone} />
+              </span>
+              <div>
+                <div className="info-lbl">Karaoke night</div>
+                <div className="info-val">Wednesdays · 3PM – 6PM</div>
+              </div>
             </div>
-          </div>
-          <div className="info-row">
-            <span className="info-icon">🍹</span>
-            <div>
-              <div className="info-lbl">Happy hour</div>
-              <div className="info-val">Fridays · 5PM – 6PM</div>
+            <div className="info-row">
+              <span className="info-icon">🍹</span>
+              <div>
+                <div className="info-lbl">Happy hour</div>
+                <div className="info-val">Fridays · 5PM – 6PM</div>
+              </div>
             </div>
-          </div>
-          <div className="info-row">
-            <span className="info-icon">⛵</span>
-            <div>
-              <div className="info-lbl">Mangrove tours</div>
-              <div className="info-val">Ask us for availability!</div>
+            <div className="info-row">
+              <span className="info-icon">⛵</span>
+              <div>
+                <div className="info-lbl">Mangrove tours</div>
+                <div className="info-val">Ask us for availability!</div>
+              </div>
             </div>
-          </div>
-          <div className="soc-row">
-            <a className="soc-btn" href="#">
-              <FontAwesomeIcon icon={faInstagram} /> Instagram
-            </a>
-            <a className="soc-btn" href="#">
-              <FontAwesomeIcon icon={faFacebook} /> Facebook
-            </a>
-            <a className="soc-btn" href="#">
-              <FontAwesomeIcon icon={faTiktok} /> TikTok
-            </a>
+            <div className="soc-row">
+              <a className="soc-btn" href="#">
+                <FontAwesomeIcon icon={faInstagram} /> Instagram
+              </a>
+              <a className="soc-btn" href="#">
+                <FontAwesomeIcon icon={faFacebook} /> Facebook
+              </a>
+              <a className="soc-btn" href="#">
+                <FontAwesomeIcon icon={faTiktok} /> TikTok
+              </a>
+            </div>
           </div>
         </div>
       </div>
