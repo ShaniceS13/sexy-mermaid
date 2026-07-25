@@ -84,7 +84,7 @@ export default function About() {
               </div>
             </div>
             <div className="info-row">
-              <span className="info-icon">⛵</span>
+              <span className="info-icon">⛵</span>{" "}
               <div>
                 <div className="info-lbl">Mangrove tours</div>
                 <div className="info-val">Ask us for availability!</div>
@@ -103,7 +103,7 @@ export default function About() {
                 className="soc-btn"
                 href="https://facebook.com"
                 target="_blank"
-                rel="noferrer"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebook} /> Facebook
               </a>
