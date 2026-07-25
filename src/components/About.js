@@ -4,13 +4,7 @@ import {
   faFacebook,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faClock,
-  faSun,
-  faMicrophone,
-  faGlassWater,
-  faShip,
-} from "@fortawesome/free-solid-svg-icons";
+import { faClock, faMicrophone } from "@fortawesome/free-solid-svg-icons";
 import "../styles/About.css";
 
 export default function About() {
@@ -97,13 +91,28 @@ export default function About() {
               </div>
             </div>
             <div className="soc-row">
-              <a className="soc-btn" href="#">
+              <a
+                className="soc-btn"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faInstagram} /> Instagram
               </a>
-              <a className="soc-btn" href="#">
+              <a
+                className="soc-btn"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noferrer"
+              >
                 <FontAwesomeIcon icon={faFacebook} /> Facebook
               </a>
-              <a className="soc-btn" href="#">
+              <a
+                className="soc-btn"
+                href="https://tiktok.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faTiktok} /> TikTok
               </a>
             </div>

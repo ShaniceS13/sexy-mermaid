@@ -38,19 +38,39 @@ export default function Footer() {
         </div>
         <div className="footer-col">
           <div className="footer-col-h">Visit us</div>
-          <a className="footer-link" href="#">
+          <a
+            className="footer-link"
+            href="https://maps.app.goo.gl/jonesville"
+            target="_blank"
+            rel="noreferrer"
+          >
             By sea — Jonesville
           </a>
-          <a className="footer-link" href="#">
+          <a
+            className="footer-link"
+            href="https://maps.app.goo.gl/lucypoint"
+            target="_blank"
+            rel="noreferrer"
+          >
             By car — Lucy Point
           </a>
-          <a className="footer-link" href="#">
+          <a className="footer-link" href="https://wa.me/50433782622">
             WhatsApp us
           </a>
-          <a className="footer-link" href="#">
+          <a
+            className="footer-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Instagram
           </a>
-          <a className="footer-link" href="#">
+          <a
+            className="footer-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Facebook
           </a>
         </div>
