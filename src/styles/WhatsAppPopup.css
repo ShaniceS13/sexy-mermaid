@@ -1,0 +1,82 @@
+.wa-fixed {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+
+.wa-bubble {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  flex-shrink: 0;
+}
+
+.wa-popup {
+  background: #fff;
+  border: 1px solid #ede0c4;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  width: 275px;
+}
+
+.wa-popup-head {
+  background: #1d9e75;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.wa-popup-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.wa-popup-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.wa-popup-body {
+  padding: 12px 14px;
+}
+
+.wa-msg {
+  background: #e1f5ee;
+  border-radius: 0 10px 10px 10px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #085041;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.wa-open-btn {
+  width: 100%;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+}
