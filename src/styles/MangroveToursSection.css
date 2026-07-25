@@ -1,0 +1,129 @@
+.mangrove {
+  padding: 3rem 2rem;
+  background: #0f6e56;
+  position: relative;
+  overflow: hidden;
+}
+
+.mangrove::after {
+  content: "Tours";
+  position: absolute;
+  bottom: -20px;
+  right: -10px;
+  font-family: "Playfair Display", serif;
+  font-size: 110px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.magrove-eyebrow {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #5dcaa5;
+  margin-bottom: 0.5rem;
+}
+
+.mangrove-h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.magrove-h2 em {
+  color: #9fe1cb;
+  font-style: italic;
+}
+
+.mangrove-desc {
+  color: #9fe1cb;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 460px;
+  margin-bottom: 2rem;
+}
+
+.mangrove-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 1.75rem;
+}
+
+.mangrove-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.mangrove-icon {
+  font-size: 26px;
+  margin-bottom: 0.6rem;
+}
+
+.mangrove-card h4 {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.mangrove-card p {
+  font-size: 12px;
+  color: #9fe1cb;
+  line-height: 1.5;
+}
+
+.mangrove-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.mangrove-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: #0f6e56;
+  border: none;
+  padding: 13px 26px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.mangrove-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #9fe1cb;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .mangrove-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mangrove-cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

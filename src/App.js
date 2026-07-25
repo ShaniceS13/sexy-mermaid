@@ -8,6 +8,8 @@ import WhyUs from "./components/WhyUs";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import RoatanFacts from "./components/RoatanFacts";
+import MangroveToursSection from "./components/MangroveToursSection";
+import Reviews from "./components/Reviews";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
       <About />
       <Menu />
       <RoatanFacts />
+      <MangroveToursSection />
+      <Reviews />
     </div>
   );
 }
