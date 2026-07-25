@@ -18,7 +18,6 @@ export default function Navbar() {
         <a href="gallery">Gallery</a>
         <a href="#about">About</a>
       </div>
-      <button className="nav-wa-btn">WhatsApp Us</button>
     </nav>
   );
 }

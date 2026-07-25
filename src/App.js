@@ -10,6 +10,10 @@ import Menu from "./components/Menu";
 import RoatanFacts from "./components/RoatanFacts";
 import MangroveToursSection from "./components/MangroveToursSection";
 import Reviews from "./components/Reviews";
+import Gallery from "./components/Gallery";
+import CTASection from "./components/CTASection";
+import Footer from "./components/Footer";
+import WhatsAppPopup from "./components/WhatsAppPopup";
 
 export default function App() {
   return (
@@ -24,6 +28,10 @@ export default function App() {
       <RoatanFacts />
       <MangroveToursSection />
       <Reviews />
+      <Gallery />
+      <CTASection />
+      <Footer />
+      <WhatsAppPopup />
     </div>
   );
 }
