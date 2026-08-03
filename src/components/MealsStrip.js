@@ -1,9 +1,9 @@
 import "../styles/MealsStrip.css";
 
-export default function MealsStrip() {
+function MealsContent() {
   return (
-    <div className="meals-strip">
-      <div className="meals-item">☀️Breakfast served</div>
+    <>
+      <div className="meals-item">☀️ Breakfast served</div>
       <span className="meals-dot">·</span>
       <div className="meals-item">🍽️ Lunch served</div>
       <span className="meals-dot">·</span>
@@ -11,6 +11,18 @@ export default function MealsStrip() {
       <span className="meals-dot">·</span>
       <div className="meals-item meals-hours">
         All day, every day · 8AM – 8PM
+      </div>
+      <span className="meals-dot">·</span>
+    </>
+  );
+}
+
+export default function MealsStrip() {
+  return (
+    <div className="meals-strip">
+      <div className="meals-track">
+        <MealsContent />
+        <MealsContent />
       </div>
     </div>
   );

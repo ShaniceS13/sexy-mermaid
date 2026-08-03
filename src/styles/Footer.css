@@ -67,6 +67,13 @@
   color: #c45a2a;
 }
 
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .footer-bottom {
   border-top: 1px solid #ede0c4;
   padding-top: 1rem;

@@ -11,7 +11,6 @@ export default function Footer() {
               alt="The Sexy Mermaid"
               className="footer-logo-img"
             />
-
             <div className="footer-logo">
               The <span>Sexy</span> <em>Mermaid</em>
             </div>
@@ -26,6 +25,7 @@ export default function Footer() {
             Seafood · Cocktails · Mangrove Tours
           </div>
         </div>
+
         <div className="footer-col">
           <div className="footer-col-h">Navigate</div>
           <a className="footer-link" href="#home">
@@ -44,6 +44,7 @@ export default function Footer() {
             About
           </a>
         </div>
+
         <div className="footer-col">
           <div className="footer-col-h">Visit us</div>
           <a
@@ -65,6 +66,10 @@ export default function Footer() {
           <a className="footer-link" href="https://wa.me/50433782622">
             WhatsApp us
           </a>
+        </div>
+
+        <div className="footer-col">
+          <div className="footer-col-h">Follow us</div>
           <a
             className="footer-link"
             href="https://instagram.com"
@@ -81,8 +86,17 @@ export default function Footer() {
           >
             Facebook
           </a>
+          <a
+            className="footer-link"
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            TikTok
+          </a>
         </div>
       </div>
+
       <div className="footer-bottom">
         <div className="footer-copy">
           © 2025 The Sexy Mermaid · A and S Restaurant · Roatan, Bay Islands,

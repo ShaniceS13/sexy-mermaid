@@ -1,11 +1,25 @@
 .meals-strip {
   background: #c45a2a;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.meals-track {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  width: max-content;
+  animation: scroll-meals 20s linear infinite;
+}
+
+@keyframes scroll-meals {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .meals-item {
@@ -22,15 +36,4 @@
 .meals-dot {
   color: rgba(255, 255, 255, 0.35);
   font-size: 16px;
-}
-
-@media (max-width: 600px) {
-  .meals-strip {
-    gap: 0.5rem;
-    padding: 0.7rem 1rem;
-  }
-
-  .meals-dot {
-    display: none;
-  }
 }
