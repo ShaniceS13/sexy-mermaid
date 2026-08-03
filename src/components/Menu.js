@@ -173,6 +173,33 @@ export default function Menu() {
           </div>
         </div>
       </div>
+      <div className="order-ahead-box">
+        <img
+          src={require("../images/food-lobster.jpeg")}
+          alt="Grilled lobster plate at The Sexy Mermaid"
+          className="order-ahead-photo"
+        />
+        <div className="order-ahead-text">
+          <p>
+            We'd love for you to come sit with us, feet by the water, and let
+            the kitchen surprise you. If you're short on time, you can always
+            call or message ahead and we'll have it ready.
+          </p>
+          <div className="order-ahead-btns">
+            <a href="tel:+50433782622" className="order-call-btn">
+              📞 +504 3378 2622
+            </a>
+            <a
+              href="https://wa.me/50433782622"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="order-wa-btn"
+            >
+              💬 Ask on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="bfast-banner">
         <span>☀️</span>
