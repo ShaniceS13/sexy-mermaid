@@ -4,12 +4,19 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <span className="logo-name">
-          The <span className="coral">Sexy</span> <em>Mermaid</em>
-        </span>
-        <span className="logo-tagline">
-          Seafood · Cocktails · Mangrove Tours · Roatán
-        </span>
+        <img
+          src={require("../images/logo.jpg")}
+          alt="The Sexy Mermaid logo"
+          className="navbar-logo-img"
+        />
+        <div>
+          <span className="logo-name">
+            The <span className="coral">Sexy</span> <em>Mermaid</em>
+          </span>
+          <span className="logo-tagline">
+            Seafood · Cocktails · Mangrove Tours · Roatán
+          </span>
+        </div>
       </div>
       <div className="navbar-links">
         <a href="#home">Home</a>

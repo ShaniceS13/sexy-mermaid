@@ -1,8 +1,8 @@
 import "../styles/EventsBar.css";
 
-export default function EventsBar() {
+function EventsContent() {
   return (
-    <div className="events-bar">
+    <>
       <div className="ev-pill">
         <span className="ev-chip ev-chip-coral">🎤 Karaoke</span>
         <span className="ev-txt">
@@ -18,13 +18,24 @@ export default function EventsBar() {
       </div>
       <div className="ev-sep"></div>
       <div className="ev-pill">
-        <span className="ev-chip- ev-chip-gold">🪸 Mangrove tours</span>
+        <span className="ev-chip ev-chip-gold">🪸 Mangrove tours</span>
         <span className="ev-txt">
           <strong>Ask us</strong> to book!
         </span>
       </div>
       <div className="ev-sep"></div>
       <span className="ev-txt">📍 Lucy Point · By sea or car</span>
+    </>
+  );
+}
+
+export default function EventsBar() {
+  return (
+    <div className="events-bar">
+      <div className="events-bar-track">
+        <EventsContent />
+        <EventsContent />
+      </div>
     </div>
   );
 }

@@ -5,8 +5,16 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <div className="footer-logo">
-            The <span>Sexy</span> <em>Mermaid</em>
+          <div className="footer-logo-row">
+            <img
+              src={require("../images/logo.jpg")}
+              alt="The Sexy Mermaid"
+              className="footer-logo-img"
+            />
+
+            <div className="footer-logo">
+              The <span>Sexy</span> <em>Mermaid</em>
+            </div>
           </div>
           <div className="footer-tagline">
             A and S Restaurant · Lucy Point, Roatán

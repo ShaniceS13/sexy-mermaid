@@ -1,10 +1,25 @@
 .events-bar {
   background: #2c1a0e;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.events-bar-track {
   display: flex;
-  gap: 2rem;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll-ticker 25s linear infinite;
+}
+
+@keyframes scroll-ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .ev-pill {

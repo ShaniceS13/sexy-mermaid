@@ -15,7 +15,6 @@
   font-family: "Playfair Display", serif;
   font-size: 18px;
   color: #2c1a0e;
-  margin-bottom: 6px;
 }
 
 .footer-logo span {
@@ -24,6 +23,21 @@
 .footer-logo em {
   color: #1d9e75;
   font-style: italic;
+}
+
+.footer-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.footer-logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c8a96a;
 }
 
 .footer-tagline {
