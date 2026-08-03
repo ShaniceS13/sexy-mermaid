@@ -6,42 +6,52 @@ import "../styles/MangroveToursSection.css";
 export default function MangroveToursSection() {
   return (
     <section className="mangrove" id="mangrove">
-      <div className="mangrove-eyebrow">🪸 Mangrove tours</div>
-      <h2 className="mangrove-h2">
-        Explore Roatan's <br />
-        <em>hidden waterways</em>
-      </h2>
-      <p className="mangrove-desc">
-        Step beyond the restaurant and into the wild heart of Roatan. Our
-        mangrove tours take you deep into ancient Caribbean waterways. An
-        unforgettable experience for first-time visitors and locals alike.
-      </p>
-      <div className="mangrove-cards">
-        <div className="mangrove-card">
-          <div className="mangrove-icon">🌿</div>
-          <h4>Ancient mangrove forests</h4>
-          <p>Navigate through Roatan's lush, protected ecosystems</p>
+      <div className="mangrove-grid">
+        <div className="mangrove-photo-wrap">
+          <img
+            src={require("../images/mangrove-tunnel.jpg")}
+            alt="Boat passing through mangrove tunnels near Oak Ridge, Roatán"
+            className="mangrove-photo"
+          />
+          <div className="mangrove-photo-caption">
+            Through the tunnels of Oak Ridge
+          </div>
         </div>
-        <div className="mangrove-card">
-          <div className="mangrove-icon">🦜</div>
-          <h4>Wildlife spotting</h4>
-          <p>Birds, fish, and marine life in their natural habitat</p>
-        </div>
-        <div className="mangrove-card">
-          <div className="mangrove-icon">📸</div>
-          <h4>Unforgettable views</h4>
-          <p>Photo opportunities unlike anywhere else on the island</p>
-        </div>
-      </div>
-      <div className="mangrove-cta-row">
-        <button className="mangrove-btn">
-          {" "}
-          <FontAwesomeIcon icon={faWhatsapp} />
-          Ask about availability
-        </button>
-        <div className="mangrove-soon">
-          <FontAwesomeIcon icon={faMoneyBill} /> Pricing and schedules coming
-          soon!
+
+        <div className="mangrove-info">
+          <div className="mangrove-eyebrow">🪸 Mangrove tours</div>
+          <h2 className="mangrove-h2">
+            Boat out with <br />
+            <em>a local captain</em>
+          </h2>
+          <p className="mangrove-desc">
+            We run small-boat tours straight from our dock into the mangrove
+            canals that connect Oak Ridge and Jonesville: narrow green tunnels,
+            herons, upside-down jellyfish, and the stilt-house communities along
+            the way.
+          </p>
+
+          <ul className="mangrove-list">
+            <li>⏱️ About 60 to 90 minutes on the water</li>
+            <li>🛶 Small groups, shaded boat, captain who grew up here</li>
+            <li>🌅 Morning trips are calmest, afternoons are best for birds</li>
+            <li>🍽️ Come back hungry — your table will be waiting</li>
+          </ul>
+
+          <div className="mangrove-note">
+            Availability changes with the weather and the tide. Message us on
+            WhatsApp and we'll tell you exactly what's running today.
+          </div>
+
+          <a
+            className="mangrove-btn"
+            href="https://wa.me/50433782622"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
+            Ask about tour availability
+          </a>
         </div>
       </div>
     </section>

@@ -19,7 +19,40 @@
   line-height: 1;
 }
 
-.magrove-eyebrow {
+.mangrove-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.mangrove-photo-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.mangrove-photo {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.mangrove-photo-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 15px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.mangrove-eyebrow {
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.2em;
@@ -37,7 +70,7 @@
   margin-bottom: 0.75rem;
 }
 
-.magrove-h2 em {
+.mangrove-h2 em {
   color: #9fe1cb;
   font-style: italic;
 }
@@ -46,48 +79,34 @@
   color: #9fe1cb;
   font-size: 14px;
   line-height: 1.8;
-  max-width: 460px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.mangrove-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 1.75rem;
+.mangrove-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
 }
 
-.mangrove-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-  padding: 1.25rem;
-  text-align: center;
-}
-
-.mangrove-icon {
-  font-size: 26px;
-  margin-bottom: 0.6rem;
-}
-
-.mangrove-card h4 {
-  font-size: 13px;
+.mangrove-list li {
   color: #fff;
-  font-weight: 700;
-  margin-bottom: 4px;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.mangrove-card p {
-  font-size: 12px;
-  color: #9fe1cb;
-  line-height: 1.5;
+.mangrove-list li:last-child {
+  border-bottom: none;
 }
 
-.mangrove-cta-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
+.mangrove-note {
+  background: #c45a2a;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 12.5px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .mangrove-btn {
@@ -102,24 +121,16 @@
   font-size: 13px;
   font-weight: 900;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.mangrove-soon {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #9fe1cb;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 9px 16px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-@media (max-width: 600px) {
-  .mangrove-cards {
+@media (max-width: 700px) {
+  .mangrove-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mangrove-photo {
+    height: 260px;
   }
 
   .mangrove-cta-row {
