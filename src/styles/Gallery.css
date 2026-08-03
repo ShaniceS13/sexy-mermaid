@@ -24,8 +24,9 @@
 }
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 140px;
+  grid-auto-flow: dense;
   gap: 10px;
 }
 .g-box {
@@ -36,21 +37,26 @@
 .g-tall {
   grid-row: span 2;
 }
+.g-wide {
+  grid-column: span 2;
+}
+.g-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .g-ph {
   background: #fef3e2;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 97px;
 }
-.g-tall .g-ph {
-  min-height: 204px;
-}
-.g-green .g-ph {
-  background: #e1f5ee;
-}
+
 .g-ph span {
   font-size: 22px;
 }
@@ -58,8 +64,123 @@
   font-size: 11px;
   color: #a89070;
 }
+
+.g-photo {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+  cursor: pointer;
+}
+
+.g-box:hover .g-photo {
+  transform: scale(1.08);
+}
+
+.g-flyer {
+  background: linear-gradient(135deg, #c45a2a, #8f3d1a);
+}
+
+.flyer-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.flyer-icon {
+  font-size: 26px;
+}
+
+.flyer-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.flyer-sub {
+  font-size: 11px;
+  color: #f5d9c4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
 @media (max-width: 600px) {
+  .lightbox-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 700px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .g-wide {
+    grid-column: span 2;
   }
 }
