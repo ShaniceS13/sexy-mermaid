@@ -35,6 +35,7 @@
 }
 
 .cta-wa-btn {
+  display: inline-block;
   background: #fff;
   color: #0f6e56;
   border: none;
@@ -43,6 +44,113 @@
   font-size: 14px;
   font-weight: 900;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.find-us {
+  background: #fef9f0;
+  padding: 3.5rem 2rem;
+}
+
+.find-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.find-us-eyebrow {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c45a2a;
+  margin-bottom: 0.5rem;
+}
+
+.find-us-h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c1a0e;
+  margin-bottom: 1.75rem;
+}
+
+.find-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ede0c4;
+}
+
+.find-row:last-child {
+  border-bottom: none;
+}
+
+.find-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.find-lbl {
+  font-size: 10px;
+  color: #a89070;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.find-val {
+  font-size: 14px;
+  color: #2c1a0e;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.find-link {
+  text-decoration: none;
+  display: block;
+}
+
+.find-link:hover {
+  color: #c45a2a;
+}
+
+.find-us-map {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 340px;
+  border: 1px solid #ede0c4;
+  display: flex;
+  flex-direction: column;
+}
+
+.find-us-map iframe {
+  height: 300px;
+}
+
+.find-directions-btn {
+  display: block;
+  text-align: center;
+  background: #1d9e75;
+  color: #fff;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .find-us-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .find-us-map {
+    height: 260px;
+  }
 }
 
 @media (max-width: 600px) {
