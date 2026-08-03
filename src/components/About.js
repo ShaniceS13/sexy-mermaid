@@ -11,6 +11,19 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="about-grid">
+        <div className="about-photo-wrap">
+          <img
+            src={require("../images/about-main.jpeg")}
+            alt="Dining deck overlooking the water at The Sexy Mermaid"
+            className="about-main-photo"
+          />
+          <div className="about-float-photo">
+            <img
+              src={require("../images/about-food.jpeg")}
+              alt="Grilled lobster tail plate at The Sexy Mermaid"
+            />
+          </div>
+        </div>
         <div className="about-text">
           <div className="about-eyebrow">Our story</div>
           <h2 className="about-h2">

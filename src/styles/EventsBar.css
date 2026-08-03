@@ -71,15 +71,3 @@
   height: 22px;
   background: rgba(255, 255, 255, 0.15);
 }
-
-@media (max-width: 600px) {
-  .events-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .ev-sep {
-    display: none;
-  }
-}

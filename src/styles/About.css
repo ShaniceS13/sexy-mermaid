@@ -10,6 +10,44 @@
   align-items: center;
 }
 
+.about-photo-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.about-main-photo {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+.about-float-photo {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  width: 140px;
+  border: 6px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: aboutFloat 4s ease-in-out infinite;
+}
+
+.about-float-photo img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+@keyframes aboutFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .about-eyebrow {
   font-size: 11px;
   font-weight: 900;
