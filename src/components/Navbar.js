@@ -21,8 +21,8 @@ export default function Navbar() {
       <div className="navbar-links">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
-        <a href="#tours">Tours</a>
-        <a href="gallery">Gallery</a>
+        <a href="#mangrove">Tours</a>
+        <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
       </div>
     </nav>

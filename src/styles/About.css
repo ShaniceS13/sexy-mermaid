@@ -3,10 +3,17 @@
   background: #fef9f0;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .about-photo-wrap {
   position: relative;
-  max-width: 700px;
-  margin: 0 auto 3rem;
 }
 
 .about-main-photo {
@@ -45,8 +52,8 @@
 }
 
 .about-text {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 .about-eyebrow {
@@ -119,6 +126,16 @@
   color: #7a6a50;
   line-height: 1.5;
   margin: 0;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-wrap {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
