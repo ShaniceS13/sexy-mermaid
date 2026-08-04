@@ -77,9 +77,9 @@ export default function CTASection() {
                 <div className="find-lbl">Email</div>
                 <a
                   className="find-val find-link"
-                  href="mailto:hola@thesexymermaidroatan.com"
+                  href="mailto:info@thesexymermaidroatan.com"
                 >
-                  hola@thesexymermaidroatan.com
+                  info@thesexymermaidroatan.com
                 </a>
               </div>
             </div>
